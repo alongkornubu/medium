@@ -1,22 +1,32 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 function login() {
     return (
         <>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+          <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <Link to="/"><a class="navbar-brand" >Medium</a></Link>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="signup.html">Signup</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/login">Login</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/signup">Signup</a></li>
                     </ul>
                 </div>
-                <header class="masthead" style={{ backgroundImage: `url("assets/img/contact-bg.jpg")` }}>
-              
-         <section class="vh-100 gradient-custom">
+            </div>
+            </nav> 
+            <header class="masthead" style={{ backgroundImage: `url("assets/img/contact-bg.jpg")` }}>
+            <section class="vh-100 gradient-custom">
              <div class="container py-5 h-100">
                <div class="row d-flex justify-content-center align-items-center h-100">
                  <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                   <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                   <div class="card bg-dark text-white" style={{borderradius: '1rem;'}}>
                      <div class="card-body p-5 text-center">
            
                        <div class="mb-md-5 mt-md-4 pb-5">
@@ -52,8 +62,8 @@ function login() {
              </div>
            </section>
  
-</header>
-            
+    </header>            
+                    
         </>
     )
 }

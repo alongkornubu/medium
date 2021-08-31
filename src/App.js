@@ -1,10 +1,23 @@
-import Header from "./Header"
-import { NavLink } from 'react-router-dom'
-import Routing from './routes'
+import Header from "./Header";
+import Login from "./Login";
+import Signup from "./Signup";
+import {Switch ,Route} from "react-router-dom";
 function App() {
   return (
     <>
-      <Header />
+      
+      <Switch>
+        <Route exact path="/">
+          <Header />
+        </Route>
+        <Route path="/login">
+           <Login/>
+        </Route>
+        <Route path="/signup">
+           <Signup/>
+        </Route>
+      </Switch>
+
     </>
   );
 }
