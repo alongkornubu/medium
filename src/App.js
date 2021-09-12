@@ -1,7 +1,9 @@
 import Header from "./Header";
 import Login from "./Login";
 import Signup from "./Signup";
+import Write from "./Write";
 import TextEditor from "./components/TextEditor";
+
 import {Switch ,Route} from "react-router-dom";
 
 function App() {
@@ -17,8 +19,8 @@ function App() {
         <Route path="/signup">
            <Signup/>
         </Route>
-        <Route path="/editor">
-           <TextEditor/>
+        <Route path="/write">
+           <Write/>
         </Route>
       </Switch>
     </>

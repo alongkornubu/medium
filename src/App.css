@@ -27,11 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-.App .TextEditor{
-  width: 900px;
-  margin-left: 20%;
-  margin-top: 50px;
-}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
