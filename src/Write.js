@@ -34,8 +34,7 @@ function Write() {
                     </div>
                 </div>
             </div>
-        </header>
-        
+        </header>       
         <br></br>
         
        <div className="editor">
